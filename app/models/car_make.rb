@@ -1,2 +1,0 @@
-class CarMake < ApplicationRecord
-end

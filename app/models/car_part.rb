@@ -1,2 +1,0 @@
-class CarPart < ApplicationRecord
-end
