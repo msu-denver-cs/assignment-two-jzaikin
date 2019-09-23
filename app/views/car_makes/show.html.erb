@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @car_make.make %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @car_make.country %>
+</p>
+
+<%= link_to 'Edit', edit_car_make_path(@car_make) %> |
+<%= link_to 'Back', car_makes_path %>
