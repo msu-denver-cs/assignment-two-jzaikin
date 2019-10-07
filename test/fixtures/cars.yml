@@ -9,3 +9,8 @@ two:
   make: MyString
   model: MyString
   VIN: 1
+
+three:
+  make: Toyota
+  model: nissan
+  VIN: 6745634785893

@@ -2,7 +2,7 @@
 
 <h1>Parts</h1>
 
-<%= form_tag(search_parts_path, method: "get") do %>
+<%= form_tag(search_parts_url, method: "get") do %>
   <%= label_tag(:query, "Search for:") %>
   <%= text_field_tag :query %>
   <%= submit_tag("Search") %>

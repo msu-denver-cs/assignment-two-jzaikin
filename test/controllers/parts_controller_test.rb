@@ -45,4 +45,14 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to parts_url
   end
+
+  test 'Should search parts' do
+    get search_makes_url, params: { search: @search }
+    assert_select 'td', @search
+  end
+
+  test 'Should Not search parts' do
+    get search_makes_url, params: {search: 'nothing'}
+    assert_select 'td', false
+  end
 end
