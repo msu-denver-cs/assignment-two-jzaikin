@@ -12,6 +12,12 @@ class MakesController < ApplicationController
   def show
   end
 
+  # GET /makes/search(.:format)
+  def search
+    @makes = Make.where("name like ?", "%#{params[:query]}%")
+    render :index
+  end
+
   # GET /makes/new
   def new
     @make = Make.new

@@ -18,7 +18,7 @@
 <p>
   <strong>Parts:</strong>
   <ul>
-    <%= @car.parts.each do |part| %>
+    <% @car.parts.each do |part| %>
       <li><%= part.name %></li>
     <% end %>
     </ul>
